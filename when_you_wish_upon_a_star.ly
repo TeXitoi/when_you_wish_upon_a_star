@@ -44,6 +44,8 @@ melody = \relative {
 }
 
 harmony = \chordmode {
+  \key f \major
+
   \repeat segno 2 {
     \repeat volta 2 {
       f2.:7+.9 | d:7.9+ |  g:min9 | g:min9 |
@@ -68,10 +70,13 @@ harmony = \chordmode {
 }
 
 \score {
-  <<
+  \new PianoStaff <<
     %%\transpose bes c'
     \new ChordNames { \harmony }
+    %%\transpose bes c'
     \new Staff  \with { \consists "Volta_engraver" }{ \melody }
+    %%\transpose bes c'
+    %%\new Staff { \harmony }
   >>
   \layout { \context { \Score \remove "Volta_engraver" } }
 }
