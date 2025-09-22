@@ -5,6 +5,7 @@
 breaks = \fourBreak
 
 \score {
+  \transpose bes c'
   \new PianoStaff <<
     \new ChordNames { \harmony }
     \new Staff  \with { \consists "Volta_engraver" } <<
