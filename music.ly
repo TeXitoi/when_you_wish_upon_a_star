@@ -49,8 +49,8 @@ harmony = \chordmode {
   \repeat segno 2 {
     \repeat volta 2 {
       f2.:7+.9 | d:7.9+ |  g:min9 | g:min9 |
-      c:7 | c:7 | b,:dim6 | f:7 |
-      bes,:7+ | b,:dim6 | f:7+ | d:7.9- |
+      c:7 | c:7 | b,:m5-.6- | f:7 |
+      bes,:7+ | b,:m5-.6- | f:7+ | d:7.9- |
       g:m7 | c:7 |
       \alternative {
         \volta 1 {
@@ -63,7 +63,7 @@ harmony = \chordmode {
       }
     }
     g2.:m7 | c:7 | a:m7 | d:9- |
-    g:m7 | c:11+ | b,:dim6 | f:7+ |
+    g:m7 | c:11+ | b,:m5-.6- | f:7+ |
     b,:m7.5- | e:9- | a:m7 | a:m7 |
     d:m11 | g:7 | g:m7 | c:7 |
   }
